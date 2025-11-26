@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+
+main {
+  width: 80%;
+  height: 95%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main nav {
+  width: 100%;
+  height: 50px;
+  padding: 0.2rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+main nav .navpart1 {
+  width: 100px;
+}
+main nav .navpart1 img {
+  width: 100%;
+}
+main nav .navpart2 {
+  width: 25%;
+  height: 80%;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.3rem;
+}
+main nav .navpart2 i {
+  font-size: 1.4rem;
+}
+main nav .navpart3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main nav .navpart3 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+main nav .navpart3 .icons p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main nav .navpart3 .pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main nav .navpart3 .pfp img {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .nav2 {
+  width: 100%;
+  height: 40px;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  gap: 1rem;
+}
+main .nav2 p {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main .nav2 .sale {
+  color: rgb(220, 85, 85);
+}
+
+.line {
+  width: calc(100% - 1.7rem);
+  height: 2px;
+  background-color: #999;
+  opacity: 0.3;
+  margin-top: 0.2rem;
+}
+
+.breadMenu {
+  width: 100%;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.breadMenu .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.breadMenu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.product-section {
+  width: 100%;
+  height: calc(95% - 92px);
+  display: flex;
+  gap: 1rem;
+}
+.product-section .product-left {
+  width: 60%;
+  height: 100%;
+}
+.product-section .product-left .product-main-image {
+  width: 100%;
+  height: 70%;
+  background-color: gainsboro;
+}
+.product-section .product-left .product-main-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.product-section .product-left .product-other-image {
+  height: 28%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.product-section .product-left .product-other-image .product {
+  width: 120px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.product-section .product-left .product-other-image .product img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.product-section .product-left .product-other-image .black {
+  border: 2px solid black;
+}
+.product-section .product-left .product-other-image .grey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(128, 128, 128, 0.202);
+}
+.product-section .product-right {
+  width: 40%;
+  height: 100%;
+}
+.product-section .product-right .part1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-section .product-right .part1 .about-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-section .product-right .part1 .about-product .brand-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product-section .product-right .part1 .about-product .brand-name .logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.product-section .product-right .part1 .about-product .brand-name .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-section .product-right .part1 .about-product .brand-name h5 {
+  font-size: 1rem;
+}
+.product-section .product-right .part1 .about-product .article {
+  color: rgba(128, 128, 128, 0.585);
+}
+.product-section .product-right .part1 .product-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.product-section .product-right .part1 .product-name .review {
+  display: flex;
+  align-items: center;
+}
+.product-section .product-right .part1 .product-name .review i {
+  color: #f0cd6e;
+}
+.product-section .product-right .part1 .product-name .review .st-grey {
+  color: rgba(153, 153, 153, 0.5490196078);
+}
+.product-section .product-right .part1 .product-name .review p {
+  padding-left: 1rem;
+}
+.product-section .product-right .part1 h1 {
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 0.8rem;
+}
+.product-section .product-right .part2 {
+  height: 90px;
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+.product-section .product-right .part2 p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.product-section .product-right .part2 p span {
+  color: #999;
+}
+.product-section .product-right .part2 .color-images {
+  flex-grow: 2;
+  display: flex;
+  gap: 1rem;
+}
+.product-section .product-right .part2 .color-images .color {
+  width: 40px;
+}
+.product-section .product-right .part2 .color-images .color img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.product-section .product-right .part3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product-section .product-right .part3 p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.product-section .product-right .part3 p span {
+  color: #999;
+}
+.product-section .product-right .part3 .size-box {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.product-section .product-right .part3 .size-box .size {
+  width: 58px;
+  height: 35px;
+  border: 1px solid black;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.product-section .product-right .part3 .size-box .size button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+.product-section .product-right .part3 .size-box .size:hover {
+  background-color: black;
+}
+.product-section .product-right .part3 .size-box .size:hover button {
+  color: white;
+}
+.product-section .product-right .part3 .size-box .active {
+  background-color: black;
+  color: white;
+}
