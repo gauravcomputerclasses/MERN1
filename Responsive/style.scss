@@ -1,0 +1,122 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    // background-color: brown;
+    @include flex-center(flex-start, center);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    .part1 {
+        width: 30%;
+        height: 100%;
+        @include flex-center(center, flex-start);
+        // background-color: yellow;
+        border-right: 1px solid black;
+
+        a {
+            text-decoration: none;
+            padding: 0.5rem 0.8rem;
+            color: black;
+            font-family: Secondry;
+            font-size: 1.1rem;
+        }
+    }
+
+    .part2 {
+        display: none;
+    }
+
+    .part3 {
+        width: 70%;
+        height: 100%;
+        @include flex-center(center, space-between);
+
+        .nav-link {
+            @include flex-center(center, center);
+            padding: 0.5rem;
+            height: 100%;
+            border-right: 1px solid black;
+
+            a {
+                text-decoration: none;
+                font-family: Secondry;
+
+                i {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .menu {
+            border: none;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        @include flex-center(center, space-between);
+        height: 7vh;
+
+        .part1 {
+            width: 10%;
+            @include flex-center(center, center);
+
+            a {
+                @include flex-center(center, center);
+            }
+        }
+
+        .part2 {
+            width: 75%;
+            height: 100%;
+            @include flex-center(center, space-between);
+
+            .nav-link {
+                flex-grow: 1;
+                @include flex-center(center, center);
+                height: 100%;
+                border-right: 1px solid black;
+
+                a {
+                    text-decoration: none;
+                    font-family: Secondry;
+                }
+            }
+        }
+
+        .part3 {
+            width: 15%;
+
+            .nav-link {
+                flex-grow: 1;
+                a {
+                    @include flex-center(center, center);
+                }
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
